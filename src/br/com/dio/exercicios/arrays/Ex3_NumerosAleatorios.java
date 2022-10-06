@@ -12,7 +12,7 @@ public class Ex3_NumerosAleatorios {
 
         int[] numerosAleatorios = new int[20];
 
-        for(int i = 0; i < numerosAleatorios.length; i++) {
+        for (int i = 0; i < numerosAleatorios.length; i++) {
             int numero = random.nextInt(100);
             numerosAleatorios[i] = numero;
         }
@@ -33,8 +33,5 @@ public class Ex3_NumerosAleatorios {
         }
 
 
-
-
     }
-
 }

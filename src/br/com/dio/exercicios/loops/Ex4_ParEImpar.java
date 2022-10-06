@@ -11,25 +11,26 @@ public class Ex4_ParEImpar {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int quantNumeros;
-        int numero;
-        int quantPares = 0, quantImpares = 0;
+        int quantNumeros; //Variavel para quantidade de números
+        int numero; //Variavel para numeros digitados
+        int quantPares = 0, quantImpares = 0; //Variavel para separar numeros pares e impares
 
-        System.out.println("Quantidade de números: ");
-        quantNumeros = scan.nextInt();
+        System.out.println("Quantidade de numeros: "); //Solicita quantidade de numeros
+        quantNumeros = scan.nextInt(); //Guarda quantidade de numeros digitados
 
-        int count = 0;
+        int count = 0; //Variavel para contador
         do {
-            System.out.println("Número: ");
-            numero = scan.nextInt();
+            System.out.println("Numero: "); //Solicita numero
+            numero = scan.nextInt(); //Guarda numero digitado
 
-            if (numero % 2 == 0 ) quantPares++;
-            else quantImpares++;
+            if (numero % 2 == 0) quantPares++; //Divide numeros por 2 e guarda na variavel os numeros com resto igual a 0
+            else quantImpares++; //Divide numeros por 2 e guarda na variavel os numeros com resto diferente de 0
 
-            count++;
-        } while(count < quantNumeros);
+            count++; //System o valor 1 ao contador
+        } while (count < quantNumeros); //Para loop quando contador for igual a quantidade de numeros escolhida
 
-        System.out.println("Quantidade Par: " + quantPares);
-        System.out.println("Quantidade Ímpar: " + quantImpares);
+        System.out.println("Quantide pares: " + quantPares);
+        System.out.println("Quantide impares: " + quantImpares);
+
     }
 }

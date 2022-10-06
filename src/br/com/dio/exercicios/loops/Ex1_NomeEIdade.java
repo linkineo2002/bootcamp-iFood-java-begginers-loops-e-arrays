@@ -15,15 +15,15 @@ public class Ex1_NomeEIdade {
         int idade;
 
         while(true) {
-            System.out.println("Nome: ");
-            nome = scan.next();
-            if (nome.equals("0")) break;
+            System.out.println("Digite o nome: "); //Sera exibida mensagem solicitando que usuario digite o nome
+            nome = scan.next(); //Para alimentar variavel com informacao do nome digitada anteriormente
+            if(nome.equals("0")) break; //Para de executar quando digitado nome igual a "0"
 
-            System.out.println("Idade: ");
-            idade = scan.nextInt();
+            System.out.println("Digite a idade: "); //Sera exibida mensagem solicitando que usuario digite a idade
+            idade = scan.nextInt(); //Para alimentar variavel com informacao da idade digitada anteriormente
         }
 
-        System.out.println("Continua aqui...");
+        System.out.println("Voce digitou o comando para encerrar");
 
     }
 

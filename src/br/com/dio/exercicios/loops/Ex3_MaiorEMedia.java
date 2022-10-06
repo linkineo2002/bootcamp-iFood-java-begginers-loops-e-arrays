@@ -11,24 +11,24 @@ public class Ex3_MaiorEMedia {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int numero;
-        int maior = 0;
-        int soma = 0;
+        int numero; //variavel para guardar numero digitado
+        int maior = 0; //variavel para guardar maior numero
+        int soma = 0; //variavel para guardar soma dos numeros
 
-        int count = 0;
+        int count = 0; //controla loop
         do {
-            System.out.println("Número: ");
-            numero = scan.nextInt();
+            System.out.println("Numero: "); //Solicita numero
+            numero = scan.nextInt(); //Guarda numero digitado
 
-            soma = soma + numero;
+            soma += numero; //Soma todos numeros digitados
 
-            if (numero > maior) maior = numero;
+            if(numero > maior) maior = numero; //Variavel maior receber valor de numero, caso ele seja maior
 
-            count = count + 1;
-        } while(count < 5);
+            count += 1; //Soma valor 1 ao contador  do loop
+
+        } while (count < 5); //Limita contador para rodar 5 vezes
 
         System.out.println("Maior: " + maior);
-        System.out.println("Média: " + (soma/5));
-
+        System.out.println("Media: " + (soma/5));
     }
 }
